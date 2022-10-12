@@ -1,0 +1,30 @@
+@import 'styles/variables';
+.root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, $darkPurple, $navy);
+
+  .loginBox {
+    background-color: $black;
+    border-radius: 10px;
+    padding: 3.2rem;
+    box-shadow: 0 0 50px 10px $darkPurple;
+
+    h2 {
+      text-align: center;
+      color: $lightPurple;
+    }
+    label {
+      color: white;
+    }
+    :global {
+      .ant-btn-primary {
+        background: $darkPurple;
+        border: $darkPurple;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.root {
+  padding: 2rem;
+  margin-left: 15%;
+  width: 85%;
+  height: 100vh;
+  background-color: $navy;
+  h3 {
+    color: white;
+  }
+  ul {
+    color: #9b78ff;
+  }
+
+  .fileList {
+    margin: 2rem 0;
+
+  }
+
+  .addNewAdminForm {
+    :global {
+      .ant-form-item-label {
+        flex: unset;
+      }
+    }
+    label {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.root {
+  height: 100vh;
+  font-size: 3.2rem;
+  :global {
+    .anticon {
+      color: $lightPurple;
+      font-size: 6.4rem;
+    }
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .authBox {
+    @extend .centralize;
+    background-color: $black;
+  }
+
+  .inquiryBox {
+    @extend .centralize;
+    background-color: $navy;
+  }
+
+  .centralize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity .5s;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
